@@ -1,0 +1,10 @@
+<!-- Source: http://jsfiddle.net/2RCVF/-->
+
+<script>
+    function myFunction(myValue){
+  document.getElementById("currentValue").innerHTML = myValue;
+}
+</script>
+
+<input type="range" value="6" min="6" max="60" step="1" oninput="myFunction(this.value)" />
+<span id="currentValue">6</span>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color</title>
+        <meta name="author" value="Joe Casabona" />
+        <style>
+            div {
+                margin: 10px;
+            }
+
+            label {
+                margin-right: 15px;
+                width: 150px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="color" method="GET" action="process.php">
+            <div>
+                <label for="color">Pick a Color</label> <input type="color" name="color" id="color"/>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>

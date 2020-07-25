@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GET vs. POST</title>
+        <meta name="author" value="Joe Casabona" />
+    </head>
+    <body>
+        <form name="getvpost" method="POST" action="process.php">
+            <div>
+                <input type="text" name="name" placeholder="Your Name" />
+            </div>
+            <div>
+                <input type="email" name="email" placeholder=" Email" />
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+            <div>
+                <p>Your Message</p>
+                <textarea name="message"></textarea>
+            </div>
+            <div>
+               <p>Favorite Movie</p>
+               <select name="fav-movie">
+                   <option value="Star Wars">Star Wars</option>
+                   <option valye="none">I don't like movies</option>
+               </select>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>

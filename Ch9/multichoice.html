@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkboxes and Radio Buttons</title>
+        <meta name="author" value="Joe Casabona" />
+    </head>
+    <body>
+        <form name="multi" method="GET" action="process.php">
+           <div>
+               <p>What's your favorite movie?</p>
+               <input type="radio" name="fav-movie" value="Star Wars IV" id="sw4" />
+               <label for="sw4">Star Wars: A New Hope</label>
+
+               <input type="radio" name="fav-movie" value="Star Wars V" id="sw5" />
+               <label for="sw5">Star Wars: Empire Strikes Back</label>
+
+               <input type="radio" name="fav-movie" value="Star Wars VI" id="sw6" />
+               <label for="sw6">Star Wars: Return of the Jedi</label>
+           </div>
+           <div>
+            <p>What movies do you want to see?</p>
+            <input type="checkbox" name="see-movie[]" value="Star Wars VII" id="sw7" />
+            <label for="sw7">Star Wars: The Force Awakens</label>
+
+            <input type="checkbox" name="see-movie[]" value="Star Wars VIII" id="sw8" />
+            <label for="sw8">Star Wars: The Last Jedi</label>
+
+            <input type="checkbox" name="see-movie[]" value="Star Wars IX" id="sw9" />
+            <label for="sw9">Star Wars: The Rise of Skywalker</label>
+        </div>
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>

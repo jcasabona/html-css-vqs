@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkboxes and Radio Buttons</title>
+        <meta name="author" value="Joe Casabona" />
+        <style>
+            div {
+                margin: 10px;
+            }
+
+            label {
+                margin-right: 15px;
+                width: 150px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="dates" method="GET" action="process.php">
+            <div>
+                <label for="date">Date</label> <input type="date" name="date" id="date"/>
+            </div>
+
+            <div>
+                <label for="datetime-local">Date Time Local</label> <input type="datetime-local" name="datetime-local" id="datetime-local" />
+            </div>
+
+            <div>
+                <label for="time">Time</label> <input type="time" name="time" id="time" />
+            </div>
+
+            <div>
+                <label for="month">Month</label> <input type="month" name="month" id="month" />
+            </div>
+
+            <div>
+                <label for="week">Week</label> <input type="week" name="week" id="week" />
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>
