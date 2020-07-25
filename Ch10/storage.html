@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storing Color</title>
+        <meta name="author" value="Joe Casabona" />
+        <style>
+            div {
+                margin: 10px;
+            }
+
+            label {
+                margin-right: 15px;
+                width: 150px;
+                display: inline-block;
+            }
+        </style>
+
+        <script>
+            function storeData(value){
+                localStorage.setItem( 'color', value );
+                document.body.style.backgroundColor = localStorage.getItem( 'color' );
+            }
+        </script>
+    </head>
+    <body>
+        <script>document.write( localStorage.getItem( 'color' ) );</script>
+        <form name="color" method="GET">
+            <div>
+                <label for="color">Pick your favorite color</label> 
+                <input type="color" oninput="storeData(this.value)" name="color" id="color" />
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>
