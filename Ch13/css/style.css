@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:wght@400;700&display=swap');
+
+@import url('fonts/fantasque-sans-mono/fantasque.css');
+
+body {
+    color: #333333;
+    font-family: 'Fantasque Sans Mono', monospace;
+    font-size: 16px;
+    padding: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+a {
+    color: darkred;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+.highlight {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 5px;
+}
+
+.alert {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.alert.blue {
+    background: blue;
+}
+
+p:first-of-type {
+    font-size: 24px;
+    color: #666666;
+    padding: 20px 60px;
+    text-align: center;
+}
