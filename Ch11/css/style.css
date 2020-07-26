@@ -1,0 +1,11 @@
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    color: brown;
+    width: 600px;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    margin: 0 auto;
+}

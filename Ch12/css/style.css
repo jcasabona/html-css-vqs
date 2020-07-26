@@ -1,0 +1,48 @@
+/** BASIC STYLES - Video 12.1 **/
+body {
+    color: #333333;
+    font-size: 16px;
+    padding: 30px;
+}
+
+a {
+    color: darkred;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+/** TARGETING CLASSES - 12.2 **/
+.intro {
+    font-size: 24px;
+    color: darkblue;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 5px;
+}
+
+/** ALERT CLASSES - Video 12.3 **/
+.alert {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.alert.blue {
+    background: blue;
+}
+
+/** TARGETING PSUDO SELECTORS - 12.7 **/
+p:first-of-type {
+    font-size: 24px;
+    color: darkblue;
+    padding: 20px 60px;
+    text-align: center;
+}
