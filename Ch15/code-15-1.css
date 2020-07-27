@@ -1,0 +1,10 @@
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+aside {
+    border: 1px solid #333333;
+    padding: 30px;
+    width: 200px;
+    float: right;
+}
