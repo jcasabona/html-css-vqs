@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color:#fcf6e7;
+}
+
+h1 {
+    color: #282009;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-shadow: 2px 1px 0 #a77a01;
+}
+
+.byline {
+    font-family: Futura, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 30px;
+    text-decoration: underline;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+p {
+    padding-left: 30px;
+    font-weight: 500;
+    text-shadow: 1px 0 0 #dbbc72;
+}
+
+article p:nth-of-type(1):first-letter {
+    font-size: 60px;
+    font-weight: 900;
+    float: left;
+    margin: -10px 3px -10px 0;
+}
+
+article p:nth-of-type(1):first-line {
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    font-size: 1.25em;
+}
+
+aside {
+    background: #FFFFFF;
+    border: 1px solid #a77a01;
+    padding: 25px;
+    box-shadow: 2px 2px 7px rgba(219, 188, 114, 0.4);
+}
+
+aside h4 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header {
+    grid-area: header;
+}
+
+article {
+    grid-area: story;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: copyright;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "header header header header"
+        "story story story sidebar"
+        "copyright copyright copyright copyright";
+    width: 900px;
+    margin: 0 auto;
+}
