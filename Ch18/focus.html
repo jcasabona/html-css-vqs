@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rental Application</title>
+        <meta name="author" value="Joe Casabona" />
+        <style>
+            div {
+                margin: 10px;
+            }
+
+            label {
+                margin-right: 15px;
+                width: 150px;
+                display: inline-block;
+            }
+
+            input {
+                font-size: 1.25rem;
+                padding: 5px;
+                border: 1px solid #333333; 
+                transition: all 0.5s ease;
+            }
+
+            input:focus {
+                font-size: 1.35rem;
+                padding: 10px;
+                border: 2px solid #008800;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rental Application</h1>
+        <form name="rental-app" method="POST" action="process.php">
+            <div>
+                <label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="Your Name" required/>
+            </div>
+
+            <div>
+                <label for="email">Email:</label> <input type="email" name="email" id="email" placeholder="Your Email" required/>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth</label> <input type="date" name="dob" id="dob" required/>
+            </div>
+
+            <div>
+                <label for="phone">Phone #</label> <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            </div>
+
+            <div>
+                <label for="income">Annual Income</label>
+                <select name="income" id="income">
+                    <option value="Less than $50,000">Less than $50,000</option>
+                    <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+                    <option value="$100,001 - $250,000">$100,001 - $250,000</option>
+                    <option value="$250,000+">$250,000+</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Do you have any pets?</p>
+                <input type="radio" name="pets" id="yes-pets" value="yes" /> <label for="yes-pets">Yes</label>
+                <input type="radio" name="pets" id="no-pets" value="No" /> <label for="no-pets">No</label>
+            </div>
+
+            <div>
+                <label for="rent-time">How long do you want to rent for (in months)?</label>
+                <input type="range" min="6" max="60" />
+            </div>
+
+            <div>
+                <input type="checkbox" id="disclosure" name="disclosure" value="true" required/> <label for="disclosure">I am submitting accurate information</label>
+            </div>
+
+            <div>
+                <input type="hidden" name="form-name" value="Rental App" />
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>

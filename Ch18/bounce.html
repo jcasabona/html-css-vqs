@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Follow the Bouncing Ball!</title>
+        <meta name="author" value="Joe Casabona" />
+        <style>
+            div {
+                width: 700px;
+                height: 600px;
+                background: lightskyblue;
+            }
+
+            p.ball {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #000000;
+                animation: bounce 3s infinite alternate; 
+                animation-timing-function: linear;
+            }
+            @keyframes bounce {
+                0% {
+                    transform: translate(0px,0px); 
+                }
+                50% {
+                    transform: translate(350px, 550px);
+                }
+                100% {
+                    transform: translate(650px, 0); 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="ball"></p>
+        </div>
+    </body>
+</html>

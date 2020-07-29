@@ -1,0 +1,33 @@
+<!-- See more at http://css3.bradshawenterprises.com/transitions/ -->
+<style>
+    img {
+        padding: 30px;
+        transition-duration: 1s;
+        transition-property: width;
+        width: 20%;
+    }
+
+    img:hover {
+        width: 40%;
+    }
+    .ease { transition-timing-function: ease; } 
+    .ease-in { transition-timing-function: ease-in; }
+    .ease-out { transition-timing-function: ease-out; }
+    .ease-in-out { transition-timing-function: ease-in-out; }
+    .linear { transition-timing-function: linear; }
+</style>
+
+<h3>ease</h3>
+<img src="images/hat.jpg" class="ease" />
+
+<h3>ease-in</h3>
+<img src="images/hat.jpg" class="ease-in" />
+
+<h3>ease-out</h3>
+<img src="images/hat.jpg" class="ease-out" />
+
+<h3>ease-in-out</h3>
+<img src="images/hat.jpg" class="ease-in-out" />
+
+<h3>linear</h3>
+<img src="images/hat.jpg" class="linear" />
