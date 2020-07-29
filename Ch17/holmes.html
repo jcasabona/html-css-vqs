@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Case of Identity</title>
+        <meta name="author" content="Joe Casabona" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById('main-nav');
+                if( 'show' === menu.className ) {
+                    menu.className = '';
+                } else {
+                    menu.className = 'show';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><img src="https://cdn.pixabay.com/photo/2015/10/28/13/27/magnifying-glass-1010537_960_720.png" /> A Case of Identity</h1>
+                <div class="byline">by Sir Arthur Conan Doyle</div>
+                <nav class="main" role="main">
+                    <a class="rwd-menu" href="#" onclick="toggle()">menu</a>
+                    <ul id="main-nav">
+                        <li><a href="#">All Stories</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Random Story</a></li>
+                    </ul>
+                </nav> 
+            </header>
+            <article>
+                <p>"My dear fellow," said Sherlock Holmes as we sat on either side of the fire in his lodgings at Baker Street, "life is infinitely stranger than anything which the mind of man could invent. We would not dare to conceive the things which are really mere commonplaces of existence. If we could fly out of that window hand in hand, hover over this great city, gently remove the roofs, and peep in at the queer things which are going on, the strange coincidences, the plannings, the cross-purposes, the wonderful chains of events, working through generations, and leading to the most outre results, it would make all fiction with its conventionalities and foreseen conclusions most stale and unprofitable."</p>
+
+                <p>"And yet I am not convinced of it," I answered. "The cases which come to light in the papers are, as a rule, bald enough, and vulgar enough. We have in our police reports realism pushed to its extreme limits, and yet the result is, it must be confessed, neither fascinating nor artistic."</p>
+
+                <p>"A certain selection and discretion must be used in producing a realistic effect," remarked Holmes. "This is wanting in the police report, where more stress is laid, perhaps, upon the platitudes of the magistrate than upon the details, which to an observer contain the vital essence of the whole matter. Depend upon it, there is nothing so unnatural as the commonplace."</p>
+            </article>
+            <aside>
+                <h4>About the Story</h4>
+                This is one of 56 short stories written about Sherlock Holmes by Sir Arthur Conan Doyle. It was published in 1891.
+            </aside>
+            <footer>
+                <p>The works of Sir Arthur Conan Doyle are in the public domain.</p>
+            </footer>
+        </div>
+    </body>
+</html>

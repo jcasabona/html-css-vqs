@@ -1,0 +1,91 @@
+body {
+    background: lightgoldenrodyellow;
+    color: #333333;
+    font-size: 1.25rem;
+}
+
+.pricing {
+   display: flex;
+   justify-content: space-around;
+}
+
+.pricebox {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+@media screen and (max-width: 781px) {
+    .pricing {
+        flex-wrap: wrap;
+    }
+
+    .pricebox:nth-child(odd) {
+        order: 1;
+    }
+
+    .pricebox:nth-child(even) {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .pricebox {
+        flex-basis: 100%;
+    }
+}
+
+
+.pricebox h3 {
+    margin: 10px;
+}
+
+.pricebox h4.price {
+    background: #000088; 
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.pricebox ul {
+    margin: 0;
+    padding: 0;
+}
+
+.pricebox ul li {
+    list-style-type: none;
+    border-top: 1px solid #000000;
+    margin: 0;
+    padding: 8px;
+}
+
+.pricebox ul li:nth-child(even) {
+    background: rgba(0, 0, 150, 0.1);
+}
+
+.pricebox p {
+    font-weight: bold;
+}
+
+.pricebox a.button {
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    color: #FFFFFF;
+    background: #000088;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+div.pricebox:nth-of-type(2) h4.price,
+div.pricebox:nth-of-type(2) a.button {
+    background: #008800;
+}
+
+div.pricebox:nth-of-type(2) ul li:nth-child(even) {
+    background: rgba(0, 150, 0, 0.1);
+}
