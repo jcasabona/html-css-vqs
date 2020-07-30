@@ -1,0 +1,7 @@
+:root {
+    --accentColor: #EB1DFE; 
+}
+
+a{
+    color: var(--accentColor); 
+}

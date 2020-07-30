@@ -1,0 +1,17 @@
+:root {
+    --gridTemplate: 1fr;
+    --gridGap: 0; 
+}
+
+@media screen and (min-width: 600px) { 
+    :root {
+        --gridTemplate: 1fr 1fr 1fr;
+        --gridGap: 10px;
+    }
+}
+   
+div {
+   display: grid; 
+   grid-template-columns: var(--gridTemplate); 
+   grid-gap: var(--gridGap);
+ }
