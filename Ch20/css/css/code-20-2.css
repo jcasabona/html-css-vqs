@@ -1,0 +1,14 @@
+.alert, .alert-good { 
+    background: #880000; 
+    color: #ffffff; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.big, .alert-good {
+    font-size: 3rem; 
+}
+
+.alert-good {
+    background: #000088;
+}
