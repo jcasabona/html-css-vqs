@@ -1,0 +1,20 @@
+.wrapper {
+    width: 800px;
+    margin: 30px auto;
+}
+main {
+    width: 500px;
+}
+aside {
+    width: 260px;
+    padding: 15px;
+    float: right;
+    position: sticky;
+    top: 0; background:rgba(0,0,0,0.085); 
+    border: 1px solid #333333;
+}
+p:nth-of-type(1) { 
+    line-height: 1.5em; 
+    letter-spacing: 0.1em; 
+    word-spacing: 0.2em;
+}

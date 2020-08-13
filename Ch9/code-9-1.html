@@ -1,16 +1,52 @@
-<form name="input-reference" method="get" action="process.php"> <input type="text" name="text" value="This is text"/>
-    <textarea name="textarea">This is a textarea</textarea>
-    <input type="password" name="password" value="This is password"/>
-    <p>Radio Buttons:</p>
-    <input type="radio" name="radio-option" value="1st option" />1st option
-    <input type="radio" name="radio-option" value="2nd option" checked />2nd option <input type="radio" name="radio-option" value="3rd option" />3rd option
-    <p>Checkboxes:</p>
-    <input type="checkbox" name="check-option1" value="Atlantis" /> 1st option <input type="checkbox" name="check-option2" value="Snow White" /> 2nd option <input type="checkbox" name="check-option3" value="Aladdin" /> 3rd option
-    <select name="select">
-    <option>This is a Select Box</option>
-    <option value="1st option">1st option</option> <option value="2nd option">2nd option</option> <option value="3rd option">3rd option</option>
-    </select>
-    <p>File Upload:</p>
-    <input type="file" name="file" />
-    <input type="submit" name="submit" value="Submit" />
-    <input type="image" name="image-submit" src="submit-img.png" alt="Submit" /> </form>
+<style>
+	form {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	input,
+	textarea,
+	select {
+		display: block;
+		margin: 20px;
+	}
+
+	input[type=checkbox],
+	input[type=radio] {
+		display: inline-block;
+	}
+
+	input[type="image"] {
+		width: 150px;
+	}
+</style>
+
+<form name="input-reference" method="get" action="process.php">
+<input type="text" name="text" value="This is text"/>
+<textarea name="textarea">This is a textarea</textarea>
+<input type="password" name="password" value="This is password"/>
+           
+<p>Radio Buttons:</p>
+            
+<input type="radio" name="radio-option" value="1st option" />1st option 
+<input type="radio" name="radio-option" value="2nd option" checked />2nd option 
+<input type="radio" name="radio-option" value="3rd option" />3rd option
+            
+<p>Checkboxes:</p>
+<input type="checkbox" name="check-option1" value="Atlantis" /> 1st option 
+<input type="checkbox" name="check-option2" value="Snow White" /> 2nd option 
+<input type="checkbox" name="check-option3" value="Aladdin" /> 3rd option 
+
+           <select name="select">
+               <option>This is a Select Box</option>
+               <option value="1st option">1st option</option>
+               <option value="2nd option">2nd option</option>
+               <option value="3rd option">3rd option</option>
+           </select> 
+
+           <p>File Upload:</p>
+           <input type="file" name="file" />
+
+            <input type="submit" name="submit" value="Submit" />
+
+            <input type="image" name="image-submit" src="submit-img.png" alt="Submit" />
+        </form>
