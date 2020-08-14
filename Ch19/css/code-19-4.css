@@ -1,6 +1,6 @@
 :root {
     --fontSize: 1.25em;
-    --fontSizeHeading: calc(var(  --fontSize) * 3 ); 
+    --fontSizeHeading: calc(var(--fontSize) * 3 ); 
 }
     
 body { 
